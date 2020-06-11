@@ -16,9 +16,6 @@ project "Imgui"
         "imstb_rectpack.h",
         "imstb_textedit.h",
         "imstb_truetpye.h",
-<<<<<<< HEAD
-        "imgui_demo.cpp"
-=======
         "imgui_demo.cpp",
         "misc/cpp/imgui_stdlib.h",
         "misc/cpp/imgui_stdlib.cpp"
@@ -27,7 +24,6 @@ project "Imgui"
     defines
     {
         "_CRT_SECURE_NO_WARNINGS"
->>>>>>> test
     }
 
     filter "system:windows"
