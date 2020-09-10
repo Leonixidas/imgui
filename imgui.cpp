@@ -4484,17 +4484,17 @@ void ImGui::EndFrame()
         g.CurrentWindow->Active = false;
     End();
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
     // Update navigation: CTRL+Tab, wrap-around requests
     NavEndFrame();
-=======
+//=======
     // Draw modal whitening background on _other_ viewports than the one the modal is one
     EndFrameDrawDimmedBackgrounds();
 
     // Show CTRL+TAB list window
     if (g.NavWindowingTarget != NULL)
         NavUpdateWindowingOverlay();
->>>>>>> test
+//>>>>>>> test
 
     SetCurrentViewport(NULL, NULL);
 
@@ -6801,12 +6801,12 @@ void ImGui::FocusWindow(ImGuiWindow* window)
     // Close popups if any
     ClosePopupsOverWindow(window, false);
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
     // Move the root window to the top of the pile
     IM_ASSERT(window == NULL || window->RootWindow != NULL);
     ImGuiWindow* focus_front_window = window ? window->RootWindow : NULL; // NB: In docking branch this is window->RootWindowDockStop
     ImGuiWindow* display_front_window = window ? window->RootWindow : NULL;
-=======
+//=======
     // Passing NULL allow to disable keyboard focus
     if (!window)
         return;
@@ -6820,7 +6820,7 @@ void ImGui::FocusWindow(ImGuiWindow* window)
     IM_ASSERT(window->RootWindow != NULL);
     ImGuiWindow* focus_front_window = window->RootWindowDockStop;
     ImGuiWindow* display_front_window = window->RootWindow;
->>>>>>> test
+//>>>>>>> test
 
     // Steal focus on active widgets
     if (g.ActiveId != 0 && g.ActiveIdWindow && g.ActiveIdWindow->RootWindow != focus_front_window)
